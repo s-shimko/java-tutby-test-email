@@ -1,7 +1,7 @@
-package by.test.dao.csv;
+package by.test.dataStorage.csv;
 
 import by.test.models.Account;
-import by.test.dao.AccountInfo;
+import by.test.dataStorage.AccountInfo;
 import com.opencsv.CSVReader;
 
 import java.io.FileReader;
@@ -12,8 +12,10 @@ import static by.test.driver.Driver.PATH;
 
 public class AccountCsvImpl implements AccountInfo {
 
+  private final String csvFile = PATH + "/src/test/resources/accounts_data.csv";
+
   public ArrayList<Account> getAccounts() {
-    final String csvFile = PATH + "/src/test/resources/account_data.csv";
+
 
     CSVReader reader;
 

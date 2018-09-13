@@ -1,4 +1,4 @@
-package by.test.dao;
+package by.test.dataStorage;
 
 import by.test.models.Account;
 import java.util.ArrayList;

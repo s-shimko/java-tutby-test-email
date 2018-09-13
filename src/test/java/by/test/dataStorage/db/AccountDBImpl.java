@@ -1,7 +1,7 @@
-package by.test.dao.db;
+package by.test.dataStorage.db;
 
 import by.test.models.Account;
-import by.test.dao.AccountInfo;
+import by.test.dataStorage.AccountInfo;
 
 import java.util.ArrayList;
 

@@ -1,11 +1,10 @@
 package by.test.runner;
 
 import by.test.models.Account;
-import by.test.dao.csv.AccountCsvImpl;
-import by.test.dao.db.AccountDBImpl;
-import by.test.dao.xml.AccountXmlImpl;
+import by.test.dataStorage.csv.AccountCsvImpl;
+import by.test.dataStorage.db.AccountDBImpl;
+import by.test.dataStorage.xml.AccountXmlImpl;
 import by.test.steps.Steps;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
@@ -16,16 +15,14 @@ import java.util.ArrayList;
 public class TutbyEmailTest {
 
   private Steps steps;
-
-  WebDriver browser;
-  public ArrayList<Account> account;
-  public Account user1;
-  public Account user2;
+  private ArrayList<Account> accounts;
+  private Account user1;
+  private Account user2;
 
   @BeforeSuite(groups = "active")
   public void chooseDataStorage() {
 //    printMenu();
-    int input = 1;
+    int input = 2;
 
     do {
 //        input = readUserInput();
@@ -33,25 +30,25 @@ public class TutbyEmailTest {
       switch (input) {
         case 1:
           AccountCsvImpl csv = new AccountCsvImpl();
-          account = csv.getAccounts();
+          accounts = csv.getAccounts();
           break;
 
         case 2:
           AccountXmlImpl xml = new AccountXmlImpl();
-          account = xml.getAccounts();
+          accounts = xml.getAccounts();
           break;
 
         case 3:
           AccountDBImpl db = new AccountDBImpl();
-          account = db.getAccounts();
+          accounts = db.getAccounts();
           break;
 
         default:
           System.out.println("Input not implemented");
       }
     } while (input < 0 && input > 3);
-    user1 = account.get(0);
-    user2 = account.get(1);
+    user1 = accounts.get(0);
+    user2 = accounts.get(1);
   }
 
   @BeforeClass(groups = "active")
