@@ -1,7 +1,7 @@
 package by.test.dataStorage.xml;
 
+import by.test.dataStorage.AccountData;
 import by.test.models.Account;
-import by.test.dataStorage.AccountInfo;
 import com.sun.org.apache.xerces.internal.parsers.DOMParser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 import static by.test.driver.Driver.PATH;
 
-public class AccountXmlImpl implements AccountInfo {
+public class AccountXmlImpl extends AccountData {
 
   private final String xmlFile = PATH + "/src/test/resources/accounts_data.xml";
 

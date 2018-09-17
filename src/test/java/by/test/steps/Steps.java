@@ -11,7 +11,7 @@ public class Steps {
 
   public void initDriver()
   {
-    driver = Driver.init(BrowserType.CHROME);
+    driver = Driver.init(System.getProperty("browser", BrowserType.CHROME));
   }
 
   public void closeDriver()

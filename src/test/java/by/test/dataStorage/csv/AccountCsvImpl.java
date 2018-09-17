@@ -1,7 +1,7 @@
 package by.test.dataStorage.csv;
 
+import by.test.dataStorage.AccountData;
 import by.test.models.Account;
-import by.test.dataStorage.AccountInfo;
 import com.opencsv.CSVReader;
 
 import java.io.FileReader;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 import static by.test.driver.Driver.PATH;
 
-public class AccountCsvImpl implements AccountInfo {
+public class AccountCsvImpl extends AccountData {
 
   private final String csvFile = PATH + "/src/test/resources/accounts_data.csv";
 

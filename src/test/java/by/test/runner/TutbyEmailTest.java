@@ -1,9 +1,10 @@
 package by.test.runner;
 
-import by.test.models.Account;
+import by.test.dataStorage.AccountData;
 import by.test.dataStorage.csv.AccountCsvImpl;
 import by.test.dataStorage.db.AccountDBImpl;
 import by.test.dataStorage.xml.AccountXmlImpl;
+import by.test.models.Account;
 import by.test.steps.Steps;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -21,32 +22,27 @@ public class TutbyEmailTest {
 
   @BeforeSuite(groups = "active")
   public void chooseDataStorage() {
-//    printMenu();
-    int input = 2;
-
-    do {
-//        input = readUserInput();
+    int input = 1;
+    AccountData data = null;
 
       switch (input) {
         case 1:
-          AccountCsvImpl csv = new AccountCsvImpl();
-          accounts = csv.getAccounts();
+          data = new AccountCsvImpl();
           break;
 
         case 2:
-          AccountXmlImpl xml = new AccountXmlImpl();
-          accounts = xml.getAccounts();
+          data = new AccountXmlImpl();
           break;
 
         case 3:
-          AccountDBImpl db = new AccountDBImpl();
-          accounts = db.getAccounts();
+          data = new AccountDBImpl();
           break;
 
         default:
-          System.out.println("Input not implemented");
+          System.out.println("Not implemented");
       }
-    } while (input < 0 && input > 3);
+
+    accounts = data.getAccounts();
     user1 = accounts.get(0);
     user2 = accounts.get(1);
   }
