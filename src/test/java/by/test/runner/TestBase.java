@@ -17,13 +17,13 @@ import java.util.Arrays;
 public abstract class TestBase {
   Logger logger = LoggerFactory.getLogger(TutbyEmailTest.class);
 
-  public Steps steps;
-  public Account user1;
-  public Account user2;
+  Steps steps;
+  Account user1;
+  Account user2;
 
   @BeforeSuite(groups = "active")
   public void chooseDataStorage() {
-    int input = 1;
+    int input = 3;
     AccountData data = null;
 
     switch (input) {

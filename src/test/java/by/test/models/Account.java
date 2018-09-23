@@ -1,9 +1,32 @@
 package by.test.models;
 
+
+import org.hibernate.annotations.Type;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="accounts")
 public class Account {
 
-  public String login;
-  public String password;
+  @Id
+  @Column(name="id")
+  @Type(type="int")
+  public int id;
+
+  @Column(name="login")
+  @Type(type="text")
+  private String login;
+
+  @Column(name="password")
+  @Type(type="text")
+  private String password;
+
+  public Account() {
+  }
 
   public Account(String login, String password) {
     this.login = login;
