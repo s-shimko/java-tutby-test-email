@@ -1,0 +1,42 @@
+
+2018-10-05 01:12:35 INFO  Log:11 - Start logging: test1
+2018-10-05 01:12:35 INFO  Log:11 - LoL info
+2018-10-05 01:12:35 ERROR Log:17 - LoL error
+2018-10-05 01:12:41 INFO  Log:11 - Stop logging: test1
+2018-10-05 01:18:05 INFO  Log:11 - Start logging: test1
+2018-10-05 01:18:05 INFO  Log:11 - LoL info
+2018-10-05 01:18:05 ERROR Log:17 - LoL error
+2018-10-05 01:18:11 INFO  Log:11 - Stop logging: test1
+2018-10-05 01:18:12 INFO  Log:11 - Screenshot captured
+2018-10-05 01:24:21 INFO  Log:11 - Start logging: test1
+2018-10-05 01:24:21 INFO  Log:11 - LoL info
+2018-10-05 01:24:21 ERROR Log:17 - LoL error
+2018-10-05 01:24:22 INFO  Log:11 - Stop logging: test1
+2018-10-05 01:30:40 INFO  Log:11 - Start logging: test1
+2018-10-05 01:30:40 INFO  Log:11 - LoL info
+2018-10-05 01:30:40 ERROR Log:17 - LoL error
+2018-10-05 01:30:42 INFO  Log:11 - Stop logging: test1
+2018-10-05 01:31:13 INFO  Log:11 - Start logging: test1
+2018-10-05 01:31:13 INFO  Log:11 - LoL info
+2018-10-05 01:31:13 ERROR Log:17 - LoL error
+2018-10-05 01:31:20 INFO  Log:11 - Stop logging: test1
+2018-10-05 01:31:20 INFO  Log:11 - Screenshot captured
+2018-10-05 01:33:39 INFO  Log:11 - Start logging: test1
+2018-10-05 01:33:39 INFO  Log:11 - LoL info
+2018-10-05 01:33:39 ERROR Log:17 - LoL error
+2018-10-05 01:33:45 INFO  Log:11 - Stop logging: test1
+2018-10-05 01:33:46 INFO  Log:11 - Screenshot captured
+2018-10-05 01:36:46 INFO  Log:11 - Start logging: test1
+2018-10-05 01:36:46 INFO  Log:11 - LoL info
+2018-10-05 01:36:46 ERROR Log:17 - LoL error
+2018-10-05 01:36:52 INFO  Log:11 - Stop logging: test1
+2018-10-05 01:38:13 INFO  Log:11 - Start logging: test1
+2018-10-05 01:38:13 INFO  Log:11 - LoL info
+2018-10-05 01:38:13 ERROR Log:17 - LoL error
+2018-10-05 01:38:20 INFO  Log:11 - Stop logging: test1
+2018-10-05 01:38:20 INFO  Log:11 - Screenshot captured
+2018-10-05 01:40:03 INFO  Log:11 - Start logging: test1
+2018-10-05 01:40:03 INFO  Log:11 - LoL info
+2018-10-05 01:40:03 ERROR Log:17 - LoL error
+2018-10-05 01:40:09 INFO  Log:11 - Stop logging: test1
+2018-10-05 01:40:09 INFO  Log:11 - Screenshot captured

@@ -4,26 +4,31 @@ import by.test.dataStorage.AccountData;
 import by.test.dataStorage.csv.AccountCsvImpl;
 import by.test.dataStorage.db.AccountDBImpl;
 import by.test.dataStorage.xml.AccountXmlImpl;
+import by.test.driver.Driver;
+import by.test.logger.Log;
 import by.test.models.Account;
 import by.test.steps.Steps;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.io.FileHandler;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
+import static by.test.driver.Driver.PATH;
 
 public abstract class TestBase {
-  Logger logger = LoggerFactory.getLogger(TutbyEmailTest.class);
-
   Steps steps;
   Account user1;
   Account user2;
 
   @BeforeSuite(groups = "active")
   public void chooseDataStorage() {
-    int input = 3;
+    int input = 1;
     AccountData data = null;
 
     switch (input) {
@@ -61,13 +66,24 @@ public abstract class TestBase {
   }
 
   @BeforeMethod(alwaysRun = true)
-  public void logTestStart(Method m, Object[] p){
-    logger.info("Start test" + m.getName() + "with parameters " + Arrays.asList(p));
+  public void logTestStart(Method m) {
+    Log.info("Start logging: " + m.getName());
   }
 
   @AfterMethod(alwaysRun = true)
-  public void logTestStop(Method m){
-    logger.info("Stop test" + m.getName());
+  public void logTestStop(Method m) {
+    Log.info("Stop logging: " + m.getName());
   }
 
+  @AfterMethod
+  public void takeScreenShotOnFailure(ITestResult testResult) throws IOException {
+    if (testResult.getStatus() == ITestResult.FAILURE) {
+      System.out.println(PATH + "src/test/errorScreenshots" + testResult.getName() + "-"
+              + Arrays.toString(testResult.getParameters()) +  ".jpg");
+      File scrFile = ((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.FILE);
+      FileHandler.copy(scrFile, new File(PATH + "/src/test/errorScreenshots/" + testResult.getName() + "-"
+              + Arrays.toString(testResult.getParameters()) +  ".jpg"));
+      Log.info("Screenshot captured");
+    }
+  }
 }

@@ -42,4 +42,7 @@ public class Driver {
     driver = null;
   }
 
+  public static WebDriver getDriver() {
+    return driver;
+  }
 }

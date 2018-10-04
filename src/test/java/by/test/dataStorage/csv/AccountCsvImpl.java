@@ -16,7 +16,6 @@ public class AccountCsvImpl extends AccountData {
 
   public ArrayList<Account> getAccounts() {
 
-
     CSVReader reader;
 
     ArrayList<Account> accountList = new ArrayList<Account>();

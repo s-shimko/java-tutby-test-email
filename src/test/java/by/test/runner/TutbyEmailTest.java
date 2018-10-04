@@ -1,17 +1,16 @@
 package by.test.runner;
 
+import by.test.logger.Log;
 import org.testng.annotations.Test;
 
 public class TutbyEmailTest extends TestBase {
 
-
   @Test(groups = "active")
   public void test1() {
-    logger.info("Start test1");
+    Log.info("LoL info");
+    Log.error("LoL error");
     steps.loginTutBy(user1.getLogin(), user1.getPassword());
-    steps.loginTutBy(user2.getLogin(), user2.getPassword());
-    logger.info("Stop test1");
-
+//    steps.loginTutBy(user2.getLogin(), user2.getPassword());
   }
 
 //  @Test(groups = "postponed")
