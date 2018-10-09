@@ -7,8 +7,8 @@ public class TutbyEmailTest extends TestBase {
 
   @Test(groups = "active")
   public void test1() {
-    Log.info("LoL info");
-    Log.error("LoL error");
+    Log.info("Log info");
+    Log.error("Log error");
     steps.loginTutBy(user1.getLogin(), user1.getPassword());
 //    steps.loginTutBy(user2.getLogin(), user2.getPassword());
   }

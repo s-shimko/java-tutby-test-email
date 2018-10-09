@@ -3,7 +3,9 @@ package by.test.steps;
 import by.test.driver.Driver;
 import by.test.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.BrowserType;
+
+import static by.test.driver.Driver.BROWSER;
+import static by.test.helpers.WaitHelper.waitForPageTitle;
 
 public class Steps {
 
@@ -11,7 +13,7 @@ public class Steps {
 
   public void initDriver()
   {
-    driver = Driver.init(System.getProperty("browser", BrowserType.CHROME));
+    driver = Driver.init(System.getProperty("browser", BROWSER));
   }
 
   public void closeDriver()
@@ -23,5 +25,6 @@ public class Steps {
     LoginPage loginPage = new LoginPage(driver);
     loginPage.open();
     loginPage.login(username, password);
+    waitForPageTitle("Яндекс.Почта");
   }
 }

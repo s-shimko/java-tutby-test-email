@@ -19,6 +19,7 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
+
 import static by.test.driver.Driver.PATH;
 
 public abstract class TestBase {
@@ -45,9 +46,12 @@ public abstract class TestBase {
         break;
 
       default:
-        System.out.println("Not implemented");
+        throw new IllegalArgumentException("Not implemented data input: " + input);
     }
+    setAccounts(data);
+  }
 
+  private void setAccounts(AccountData data) {
     ArrayList<Account> accounts = data.getAccounts();
     user1 = accounts.get(0);
     user2 = accounts.get(1);
@@ -79,10 +83,10 @@ public abstract class TestBase {
   public void takeScreenShotOnFailure(ITestResult testResult) throws IOException {
     if (testResult.getStatus() == ITestResult.FAILURE) {
       System.out.println(PATH + "src/test/errorScreenshots" + testResult.getName() + "-"
-              + Arrays.toString(testResult.getParameters()) +  ".jpg");
-      File scrFile = ((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.FILE);
-      FileHandler.copy(scrFile, new File(PATH + "/src/test/errorScreenshots/" + testResult.getName() + "-"
-              + Arrays.toString(testResult.getParameters()) +  ".jpg"));
+              + Arrays.toString(testResult.getParameters()) + ".jpg");
+      File scrFile = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.FILE);
+      FileHandler.copy(scrFile, new File(PATH + "/src/test/errorScreenshots" + testResult.getName() + "-"
+              + Arrays.toString(testResult.getParameters()) + ".jpg"));
       Log.info("Screenshot captured");
     }
   }

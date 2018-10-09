@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Driver {
 
+  public static final String BROWSER = BrowserType.CHROME;
   public static final String PATH = System.getProperty("user.dir");
 
   private static WebDriver driver;

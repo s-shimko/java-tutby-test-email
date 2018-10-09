@@ -1,4 +1,4 @@
-package by.test.dataStorage.db;
+package by.test.helpers;
 
 import by.test.models.Account;
 import org.hibernate.SessionFactory;
@@ -22,6 +22,7 @@ public class SessionFactoryHelper {
     }
   }
 
+  //example, method is not used
   public static SessionFactory createSessionFactory() {
     Configuration configuration = new Configuration();
     configuration.addAnnotatedClass(Account.class);
