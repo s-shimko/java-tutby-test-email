@@ -23,7 +23,7 @@ public class AccountCsvImpl extends AccountData {
       reader = new CSVReader(new FileReader(csvFile));
       String[] line;
       while ((line = reader.readNext()) != null) {
-        accountList.add(new Account(line[0], line[1]));
+        accountList.add(new Account(line[0], line[1], line[2]));
       }
     } catch (IOException e) {
       e.printStackTrace();

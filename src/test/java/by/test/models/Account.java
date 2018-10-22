@@ -9,21 +9,25 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="accounts")
+@Table(name = "accounts")
 public class Account {
 
   @Id
-  @Column(name="id")
-  @Type(type="int")
+  @Column(name = "id")
+  @Type(type = "int")
   public int id;
 
-  @Column(name="login")
-  @Type(type="text")
+  @Column(name = "login")
+  @Type(type = "text")
   private String login;
 
-  @Column(name="password")
-  @Type(type="text")
+  @Column(name = "password")
+  @Type(type = "text")
   private String password;
+
+  @Column(name = "email")
+  @Type(type = "text")
+  private String email;
 
   public Account() {
   }
@@ -31,6 +35,12 @@ public class Account {
   public Account(String login, String password) {
     this.login = login;
     this.password = password;
+  }
+
+  public Account(String login, String password, String email) {
+    this.login = login;
+    this.password = password;
+    this.email = email;
   }
 
   public String getLogin() {
@@ -49,11 +59,21 @@ public class Account {
     this.password = password;
   }
 
+  public String getEmail() {
+    return email;
+  }
+
+  public void setEmail(String email) {
+    this.email = email;
+  }
+
   @Override
   public String toString() {
     return "Account{" +
-            "login='" + login + '\'' +
+            "id=" + id +
+            ", login='" + login + '\'' +
             ", password='" + password + '\'' +
+            ", email='" + email + '\'' +
             '}';
   }
 }
