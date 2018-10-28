@@ -4,28 +4,36 @@ import by.test.helpers.DateHelper;
 import by.test.logger.Log;
 import org.testng.annotations.Test;
 
+import java.lang.reflect.Method;
+
 import static by.test.driver.Driver.BROWSER;
 
 public class TutbyEmailTest extends TestBase {
 
   @Test(groups = "active")
-  public void testEmailSending() {
+  public void testEmailSending(Method method) {
     String messageSubject = BROWSER + " - " + DateHelper.getDateTimeNow("yyyy.MM.dd_hh:mm:ss");
-    Log.info("Log info");
-    Log.error("Log error");
+    Log.info("Start test: " + method.getName());
 //    Mail mail = new Mail.Builder()
-//            .withFrom(user1.getEmail())
-//            .withTo(user2.getEmail())
+//            .withFrom(user2.getEmail())
+//            .withTo(user1.getEmail())
 //            .withMessageText(messageSubject)
 //            .withSubject(messageSubject)
-//            .withUsername(user1.getLogin())
-//            .withPassword(user1.getPassword())
+//            .withUsername(user2.getLogin())
+//            .withPassword(user2.getPassword())
 //            .withRecipientType(RecipientType.TO)
 //            .build();
-    steps.loginTutBy(user1.getLogin(), user1.getPassword());
-    System.out.println(user1.getEmail());
-//    steps.loginTutBy(user2.getLogin(), user2.getPassword());
+//    MailHelper.sendMailSmtp(mail);
+
+//    steps.login(user2.getLogin(), user2.getPassword());
+
+    steps.login(user1.getLogin(), user1.getPassword());
+    steps.checkEmail("chrome - 2018.10.27_05:37:11");
+    steps.logout();
+    Log.info("Finish log test: " + method.getName());
   }
+
+
 
 //  @Test(groups = "postponed")
 //  public void test2() {

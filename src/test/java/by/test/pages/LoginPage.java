@@ -10,13 +10,13 @@ public class LoginPage extends AbstractPage {
 
   private final String BASE_URL = DataHelper.get("host");
 
-  @FindBy(xpath = ".//input[@name='login']")
+  @FindBy(xpath = "//input[@name='login']")
   private WebElement inputLogin;
 
-  @FindBy(xpath = ".//input[@name='password']")
+  @FindBy(xpath = "//input[@name='passwd']")
   private WebElement inputPass;
 
-  @FindBy(xpath = ".//input[@type='submit']")
+  @FindBy(xpath = "//button[@type='submit']")
   private WebElement buttonSubmit;
 
 

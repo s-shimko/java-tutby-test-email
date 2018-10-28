@@ -31,8 +31,8 @@ public class Driver {
         System.setProperty(CHROMEDRIVER, CHROMEDRIVER_PATH);
         driver = new ChromeDriver();
       }
-      driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
-      driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+      driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
       driver.manage().window().maximize();
     }
     return driver;
