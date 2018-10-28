@@ -12,11 +12,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestResult;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -59,24 +61,17 @@ public abstract class TestBase {
 
   @BeforeClass(groups = "active")
   public void beforeMethod() {
+    Log.info("Start logging");
     steps = new Steps();
     steps.initDriver();
-
+    Log.info("Driver initialized");
   }
 
   @AfterClass(groups = "active")
   public void afterMethod() {
     steps.closeDriver();
-  }
-
-  @BeforeMethod(alwaysRun = true)
-  public void logTestStart(Method m) {
-    Log.info("Start logging: " + m.getName());
-  }
-
-  @AfterMethod(alwaysRun = true)
-  public void logTestStop(Method m) {
-    Log.info("Stop logging: " + m.getName());
+    Log.info("Driver is closed");
+    Log.info("Stop logging");
   }
 
   @AfterMethod

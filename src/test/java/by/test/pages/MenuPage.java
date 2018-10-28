@@ -1,7 +1,5 @@
 package by.test.pages;
 
-import by.test.logger.Log;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,14 +7,20 @@ import org.openqa.selenium.support.PageFactory;
 
 public class MenuPage extends AbstractPage {
 
-  @FindBy(xpath = "//span[@id='recipient-1']")
+  @FindBy(xpath = "//div[@class='user-pic user-account__pic']")
   private WebElement accountMenuIcon;
 
-  @FindBy(xpath = "//a[@data-metric='Выйти из сервисов Яндекса']")
+  @FindBy(xpath = "//a[@class='menu__item user2__menu-item user2__menu-item_type_link user2__menu-item_action_mail menu__item menu__item_type_link']")
+  private WebElement emailMenuLink;
+
+  @FindBy(xpath = "//a[@class='menu__item user2__menu-item user2__menu-item_type_link user2__menu-item_action_exit menu__item menu__item_type_link']")
   private WebElement logoutYandex;
 
   @Override
-  public void open(){}
+  public void open(){
+    accountMenuIcon.click();
+    emailMenuLink.click();
+  }
 
   public MenuPage(WebDriver driver) {
     super(driver);
@@ -28,15 +32,4 @@ public class MenuPage extends AbstractPage {
     logoutYandex.click();
   }
 
-  public boolean verifyMailPresent(String subject) {
-    String xpath = "//span[@class='mail-MessageSnippet-Item mail-MessageSnippet-Item_subject']/span[@title='" + subject + "']";
-    driver.findElement(By.xpath(xpath));
-    if(!driver.findElements(By.xpath(xpath)).isEmpty()){
-      Log.info("Mail is present");
-      return true;
-    }else{
-      Log.error("Mail is not present");
-      return false;
-    }
-  }
 }

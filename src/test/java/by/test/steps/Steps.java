@@ -2,11 +2,13 @@ package by.test.steps;
 
 import by.test.driver.Driver;
 import by.test.pages.LoginPage;
+import by.test.pages.MailPage;
 import by.test.pages.MenuPage;
 import org.openqa.selenium.WebDriver;
 
 import static by.test.driver.Driver.BROWSER;
 import static by.test.helpers.WaitHelper.waitForPageTitle;
+import static by.test.helpers.WaitHelper.waitPageLoading;
 import static org.testng.Assert.assertTrue;
 
 public class Steps {
@@ -27,17 +29,27 @@ public class Steps {
     LoginPage loginPage = new LoginPage(driver);
     loginPage.open();
     loginPage.login(username, password);
-    waitForPageTitle("Яндекс.Почта");
+    waitForPageTitle("Яндекс.Паспорт");
+    MenuPage menuPage = new MenuPage(driver);
+    menuPage.open();
+    waitPageLoading();
+  }
+
+  public void menuPagelogout() {
+    MenuPage menuPage = new MenuPage(driver);
+    menuPage.logout();
+    waitForPageTitle("Авторизация");
+  }
+
+  public void mailPagelogout() {
+    MailPage mailPage = new MailPage(driver);
+    mailPage.logout();
+    waitForPageTitle("Яндекс");
   }
 
   public void checkEmail(String subject){
-    MenuPage menuPage = new MenuPage(driver);
-    assertTrue(menuPage.verifyMailPresent(subject));
+    MailPage mailPage = new MailPage(driver);
+    assertTrue(mailPage.verifyMailPresent(subject));
   }
 
-  public void logout() {
-    MenuPage menuPage = new MenuPage(driver);
-    menuPage.logout();
-    waitForPageTitle("Яндекс");
-  }
 }

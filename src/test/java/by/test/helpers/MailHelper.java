@@ -1,5 +1,6 @@
 package by.test.helpers;
 
+import by.test.logger.Log;
 import by.test.models.Mail;
 
 import javax.mail.*;
@@ -39,6 +40,7 @@ public class MailHelper {
             });
 
     Message message = new MimeMessage(session);
+    String subject = mail.getSubject();
     try {
 
       message.setFrom(new InternetAddress(mail.getFrom()));
@@ -56,14 +58,15 @@ public class MailHelper {
           System.out.println("Wrong recipient type!");
 
       }
-      message.setSubject(mail.getSubject());
+      message.setSubject(subject);
       message.setText(mail.getMessageText());
       Transport.send(message);
 
     } catch (MessagingException e) {
       e.printStackTrace();
     }
-    System.out.println("Email send from " + mail.getFrom() + " to " + mail.getTo());
+    Log.info("Email send from " + mail.getFrom() + " to " + mail.getTo());
+    Log.info("Mail subject: " + subject);
   }
 }
 

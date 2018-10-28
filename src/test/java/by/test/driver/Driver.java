@@ -14,10 +14,10 @@ public class Driver {
 
   private static WebDriver driver;
   private static final String GECKODRIVER = "webdriver.gecko.driver";
-  private static final String GECKODRIVER_PATH = PATH + "/src/test/resources/webdrivers/geckodriver/0210/geckodriver";
+  private static final String GECKODRIVER_PATH = "/home/sergey/sergey/tools/webdrivers/geckodriver/0210/geckodriver";
 
   private static final String CHROMEDRIVER = "webdriver.chrome.driver";
-  private static final String CHROMEDRIVER_PATH = PATH + "/src/test/resources/webdrivers/chromedriver/241/chromedriver";
+  private static final String CHROMEDRIVER_PATH = "/home/sergey/sergey/tools/webdrivers/chromedriver/241/chromedriver";
 
   private Driver() {
   }
