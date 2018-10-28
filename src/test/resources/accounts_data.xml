@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <users>
     <user id="1">
-        <login>user1_login</login>
-        <password>user1_pass</password>
+        <login>testAccountForTestMail1</login>
+        <password>passwordForAccount1</password>
+        <email>testaccountfortestmail1@yandex.by</email>
     </user>
     <user id="2">
-        <login>user2_login</login>
-        <password>user2_pass</password>
+        <login>testAccountForTestMail2</login>
+        <password>passwordForAccount2</password>
+        <email>testaccountfortestmail2@yandex.by</email>
     </user>
 </users>

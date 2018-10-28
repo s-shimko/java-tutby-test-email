@@ -39,13 +39,15 @@ public class AccountXmlImpl extends AccountData {
     Element root = document.getDocumentElement();
     String login;
     String password;
+    String email;
 
     NodeList nodes = root.getElementsByTagName("user");
     for (int i = 0; i < nodes.getLength(); i++) {
        Element currentNode = (Element) nodes.item(i);
       login = currentNode.getElementsByTagName("login").item(0).getTextContent().trim();
       password = currentNode.getElementsByTagName("password").item(0).getTextContent().trim();
-      Account account = new Account(login, password);
+      email = currentNode.getElementsByTagName("email").item(0).getTextContent().trim();
+      Account account = new Account(login, password, email);
       accountList.add(account);
     }
 

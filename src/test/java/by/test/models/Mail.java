@@ -3,14 +3,6 @@ package by.test.models;
 import by.test.helpers.RecipientType;
 
 public class Mail {
-//  private String to = "sergey1shimko@gmail.com";
-//  private String from = "testAccountForTestMail1@yandex.ru";
-//  private String username = "testAccountForTestMail1";
-//  private String password = "passwordForAccount1";
-//  private String subject = "To Subject";
-//  private String message_text = "Browser: " + BROWSER + ", Date: " + DateHelper.getDateTimeNow("yyyy.MM.dd_hh:mm:ss");
-//  private RecipientType recipientType = TO;
-
   private String to;
   private String from;
   private String username;

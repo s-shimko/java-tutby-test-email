@@ -6,12 +6,10 @@ import by.test.helpers.RecipientType;
 import by.test.logger.Log;
 import by.test.models.Mail;
 import org.testng.annotations.Test;
-
 import java.lang.reflect.Method;
-
 import static by.test.driver.Driver.BROWSER;
 
-public class TutbyEmailTest extends TestBase {
+public class TestMailPortal extends TestBase {
 
   @Test(groups = "active")
   public void testEmailSending(Method method) {

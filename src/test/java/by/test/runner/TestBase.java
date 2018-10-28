@@ -4,25 +4,18 @@ import by.test.dataStorage.AccountData;
 import by.test.dataStorage.csv.AccountCsvImpl;
 import by.test.dataStorage.db.AccountDBImpl;
 import by.test.dataStorage.xml.AccountXmlImpl;
-import by.test.driver.Driver;
+import by.test.helpers.ScreenshotHelper;
 import by.test.logger.Log;
 import by.test.models.Account;
 import by.test.steps.Steps;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
-
-import static by.test.driver.Driver.PATH;
 
 public abstract class TestBase {
   Steps steps;
@@ -75,14 +68,7 @@ public abstract class TestBase {
   }
 
   @AfterMethod
-  public void takeScreenShotOnFailure(ITestResult testResult) throws IOException {
-    if (testResult.getStatus() == ITestResult.FAILURE) {
-      System.out.println(PATH + "src/test/errorScreenshots" + testResult.getName() + "-"
-              + Arrays.toString(testResult.getParameters()) + ".jpg");
-      File scrFile = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.FILE);
-      FileHandler.copy(scrFile, new File(PATH + "/src/test/errorScreenshots" + testResult.getName() + "-"
-              + Arrays.toString(testResult.getParameters()) + ".jpg"));
-      Log.info("Screenshot captured");
-    }
+  public void ifFailure(ITestResult testResult) throws IOException {
+    ScreenshotHelper.takeScreenShotOnFailure(testResult);
   }
 }
