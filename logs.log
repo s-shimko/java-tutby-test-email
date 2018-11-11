@@ -1,279 +1,82 @@
-2018-10-28 16:03:03 INFO  Log:11 - Start logging
-2018-10-28 16:03:06 INFO  Log:11 - Driver initialized
-2018-10-28 16:03:06 INFO  Log:11 - Start test: testEmailSending
-2018-10-28 16:03:07 INFO  Log:11 - Email send from testaccountfortestmail2@yandex.by to testaccountfortestmail1@yandex.by
-2018-10-28 16:03:07 INFO  Log:11 - Mail subject: chrome - 2018.10.28_04:03:06
-2018-10-28 16:03:13 INFO  Log:11 - Screenshot captured
-2018-10-28 16:03:13 INFO  Log:11 - Driver is closed
-2018-10-28 16:03:13 INFO  Log:11 - Stop logging
-2018-10-28 16:10:25 INFO  Log:11 - Start logging
-2018-10-28 16:10:28 INFO  Log:11 - Driver initialized
-2018-10-28 16:10:28 INFO  Log:11 - Start test: testEmailSending
-2018-10-28 16:10:29 INFO  Log:11 - Email send from testaccountfortestmail2@yandex.by to testaccountfortestmail1@yandex.by
-2018-10-28 16:10:29 INFO  Log:11 - Mail subject: chrome - 2018.10.28_04:10:28
-2018-10-28 16:10:36 INFO  Log:11 - Mail is present: chrome - 2018.10.28_04:10:28
-2018-10-28 16:10:38 INFO  Log:11 - Test successfully finished: testEmailSending
-2018-10-28 16:10:38 INFO  Log:11 - Driver is closed
-2018-10-28 16:10:38 INFO  Log:11 - Stop logging
-2018-10-28 21:57:09 INFO  Log:11 - Start logging
-2018-10-28 21:57:15 INFO  Log:11 - Driver initialized
-2018-10-28 21:57:15 INFO  Log:11 - Start test: testEmailSending
-2018-10-28 21:57:25 INFO  Log:11 - Email send from testaccountfortestmail2@yandex.by to testaccountfortestmail1@yandex.by
-2018-10-28 21:57:25 INFO  Log:11 - Mail subject: chrome - 2018.10.28_09:57:15
-2018-10-28 21:57:57 INFO  Log:11 - Screenshot captured
-2018-10-28 21:57:57 INFO  Log:11 - Driver is closed
-2018-10-28 21:57:57 INFO  Log:11 - Stop logging
-2018-10-28 21:58:16 INFO  Log:11 - Start logging
-2018-10-28 21:58:17 INFO  Log:11 - Driver initialized
-2018-10-28 21:58:17 INFO  Log:11 - Start test: testEmailSending
-2018-10-28 21:58:35 INFO  Log:11 - Email send from testaccountfortestmail2@yandex.by to testaccountfortestmail1@yandex.by
-2018-10-28 21:58:35 INFO  Log:11 - Mail subject: chrome - 2018.10.28_09:58:17
-2018-10-28 21:58:54 INFO  Log:11 - Mail is present: chrome - 2018.10.28_09:58:17
-2018-10-28 21:59:05 INFO  Log:11 - Test successfully finished: testEmailSending
-2018-10-28 21:59:05 INFO  Log:11 - Driver is closed
-2018-10-28 21:59:05 INFO  Log:11 - Stop logging
-2018-10-28 21:59:25 DEBUG logging:110 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
-2018-10-28 21:59:26 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
-2018-10-28 21:59:26 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
-2018-10-28 21:59:26 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
-2018-10-28 21:59:26 INFO  Version:46 - HHH000412: Hibernate Core {5.3.6.Final}
-2018-10-28 21:59:26 INFO  Environment:213 - HHH000206: hibernate.properties not found
-2018-10-28 21:59:26 DEBUG LocalXmlResourceResolver:57 - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
-2018-10-28 21:59:26 DEBUG LocalXmlResourceResolver:85 - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
-2018-10-28 21:59:26 DEBUG JaxbCfgProcessor:116 - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
-2018-10-28 21:59:27 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
-2018-10-28 21:59:27 DEBUG RegionFactoryInitiator:118 - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
-2018-10-28 21:59:27 DEBUG RegionFactoryInitiator:49 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
-2018-10-28 21:59:27 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration boolean -> org.hibernate.type.BooleanType@59429fac
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration boolean -> org.hibernate.type.BooleanType@59429fac
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@59429fac
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@7103ab0
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@588cd519
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration yes_no -> org.hibernate.type.YesNoType@6be25526
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration byte -> org.hibernate.type.ByteType@cb0f763
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration byte -> org.hibernate.type.ByteType@cb0f763
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@cb0f763
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration character -> org.hibernate.type.CharacterType@795fd838
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration char -> org.hibernate.type.CharacterType@795fd838
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@795fd838
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration short -> org.hibernate.type.ShortType@15fb7a32
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration short -> org.hibernate.type.ShortType@15fb7a32
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@15fb7a32
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration integer -> org.hibernate.type.IntegerType@31da6b2e
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration int -> org.hibernate.type.IntegerType@31da6b2e
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@31da6b2e
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration long -> org.hibernate.type.LongType@7c6442c2
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration long -> org.hibernate.type.LongType@7c6442c2
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@7c6442c2
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration float -> org.hibernate.type.FloatType@3015db78
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration float -> org.hibernate.type.FloatType@3015db78
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@3015db78
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration double -> org.hibernate.type.DoubleType@5a6482a9
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration double -> org.hibernate.type.DoubleType@5a6482a9
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@5a6482a9
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@65fd6708
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@65fd6708
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@b967222
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@b967222
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration string -> org.hibernate.type.StringType@796065aa
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.String -> org.hibernate.type.StringType@796065aa
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@d8948cd
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@7abe27bf
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration url -> org.hibernate.type.UrlType@5bb7643d
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@5bb7643d
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration Duration -> org.hibernate.type.DurationType@3c0fbd3a
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@3c0fbd3a
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration Instant -> org.hibernate.type.InstantType@5fb7183b
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@5fb7183b
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@6e106680
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@6e106680
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@352e787a
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@352e787a
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@73044cdf
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@73044cdf
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2f5c1332
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2f5c1332
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@22bd2039
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@22bd2039
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2e34384c
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2e34384c
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration date -> org.hibernate.type.DateType@2d2acd89
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@2d2acd89
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration time -> org.hibernate.type.TimeType@22bb5646
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@22bb5646
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration timestamp -> org.hibernate.type.TimestampType@27b000f7
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@27b000f7
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@27b000f7
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@253b380a
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration calendar -> org.hibernate.type.CalendarType@5fad41be
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@5fad41be
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@5fad41be
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@1d25c1c
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration locale -> org.hibernate.type.LocaleType@9255c05
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@9255c05
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration currency -> org.hibernate.type.CurrencyType@1931d99
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1931d99
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@6293e39e
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6293e39e
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration class -> org.hibernate.type.ClassType@29a69a35
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@29a69a35
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@4e904fd5
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@4e904fd5
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@15dd5ac2
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration binary -> org.hibernate.type.BinaryType@54aca26f
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration byte[] -> org.hibernate.type.BinaryType@54aca26f
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration [B -> org.hibernate.type.BinaryType@54aca26f
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@59532566
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@59532566
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@59532566
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration row_version -> org.hibernate.type.RowVersionType@33cbfa57
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration image -> org.hibernate.type.ImageType@834831b
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration characters -> org.hibernate.type.CharArrayType@7c4fc2bf
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration char[] -> org.hibernate.type.CharArrayType@7c4fc2bf
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration [C -> org.hibernate.type.CharArrayType@7c4fc2bf
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@76d05cc9
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@76d05cc9
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@76d05cc9
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration text -> org.hibernate.type.TextType@5177e388
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration ntext -> org.hibernate.type.NTextType@69d6a7cd
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration blob -> org.hibernate.type.BlobType@655523dd
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@655523dd
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@12958360
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration clob -> org.hibernate.type.ClobType@748e9b20
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@748e9b20
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration nclob -> org.hibernate.type.NClobType@971e903
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@971e903
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@38704ff0
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@36dfbdaf
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration serializable -> org.hibernate.type.SerializableType@191a709b
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration object -> org.hibernate.type.ObjectType@3e1624c7
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@3e1624c7
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@48535004
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@610df783
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@f3fcd59
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@2b56f5f8
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@79d743e6
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@776802b0
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@64c4c01
-2018-10-28 21:59:27 DEBUG BasicTypeRegistry:156 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@1aa99005
-2018-10-28 21:59:27 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
-2018-10-28 21:59:27 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
-2018-10-28 21:59:27 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
-2018-10-28 21:59:27 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
-2018-10-28 21:59:27 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
-2018-10-28 21:59:28 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
-2018-10-28 21:59:28 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
-2018-10-28 21:59:28 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
-2018-10-28 21:59:28 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
-2018-10-28 21:59:28 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
-2018-10-28 21:59:28 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
-2018-10-28 21:59:28 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
-2018-10-28 21:59:28 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
-2018-10-28 21:59:28 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
-2018-10-28 21:59:28 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2018-10-28 21:59:28 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/tutby_data]
-2018-10-28 21:59:28 INFO  pooling:135 - HHH10001001: Connection properties: {password=, user=root}
-2018-10-28 21:59:28 INFO  pooling:143 - HHH10001003: Autocommit mode: false
-2018-10-28 21:59:28 DEBUG DriverManagerConnectionProviderImpl:384 - Initializing Connection pool with 1 Connections
-2018-10-28 21:59:28 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
-2018-10-28 21:59:28 WARN  JdbcEnvironmentInitiator:132 - HHH000342: Could not obtain connection to query metadata : null
-2018-10-28 21:59:28 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2018-10-28 21:59:28 DEBUG IdentifierHelperBuilder:191 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-2018-10-28 21:59:28 INFO  LobCreatorBuilderImpl:63 - HHH000422: Disabling contextual LOB creation as connection was null
-2018-10-28 21:59:28 DEBUG SqlExceptionHelper:126 - Error calling Driver#connect [null]
-com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:832) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:38) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:58) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.addConnections(DriverManagerConnectionProviderImpl.java:363) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:282) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:260) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections$Builder.build(DriverManagerConnectionProviderImpl.java:401) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:112) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:100) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:145) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:84) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:474) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:85) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at org.hibernate.boot.MetadataSources.buildMetadata(MetadataSources.java:180) [hibernate-core-5.3.6.Final.jar:5.3.6.Final]
-	at by.test.helpers.SessionFactoryHelper.<clinit>(SessionFactoryHelper.java:18) [test-classes/:?]
-	at by.test.dataStorage.db.AccountDBImpl.getAccounts(AccountDBImpl.java:17) [test-classes/:?]
-	at by.test.runner.TestBase.setAccounts(TestBase.java:50) [test-classes/:?]
-	at by.test.runner.TestBase.chooseDataStorage(TestBase.java:46) [test-classes/:?]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59) [testng-6.14.3.jar:?]
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458) [testng-6.14.3.jar:?]
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222) [testng-6.14.3.jar:?]
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142) [testng-6.14.3.jar:?]
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401) [testng-6.14.3.jar:?]
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364) [testng-6.14.3.jar:?]
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-6.14.3.jar:?]
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84) [testng-6.14.3.jar:?]
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208) [testng-6.14.3.jar:?]
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137) [testng-6.14.3.jar:?]
-	at org.testng.TestNG.runSuites(TestNG.java:1049) [testng-6.14.3.jar:?]
-	at org.testng.TestNG.run(TestNG.java:1017) [testng-6.14.3.jar:?]
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72) [testng-plugin.jar:?]
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123) [testng-plugin.jar:?]
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488) ~[?:?]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:152) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:952) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:822) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	... 54 more
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
-	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400) ~[?:?]
-	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243) ~[?:?]
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225) ~[?:?]
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:402) ~[?:?]
-	at java.base/java.net.Socket.connect(Socket.java:591) ~[?:?]
-	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:173) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:152) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:952) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:822) ~[mysql-connector-java-8.0.12.jar:8.0.12]
-	... 54 more
-2018-10-28 21:59:28 WARN  SqlExceptionHelper:137 - SQL Error: 0, SQLState: 08S01
-2018-10-28 21:59:28 ERROR SqlExceptionHelper:142 - Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2018-10-28 21:59:28 INFO  AbstractServiceRegistryImpl:392 - HHH000369: Error stopping service [class org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] : java.lang.NullPointerException
-2018-10-28 21:59:28 DEBUG BootstrapServiceRegistryImpl:295 - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2018-11-11 01:35:11 INFO  Log:11 - Start logging
+2018-11-11 01:35:20 INFO  Log:11 - Driver initialized
+2018-11-11 01:35:20 INFO  Log:11 - Start test: testEmailSending
+2018-11-11 01:35:23 INFO  Log:11 - Email send from testaccountfortestmail2@yandex.by to testaccountfortestmail1@yandex.by
+2018-11-11 01:35:23 INFO  Log:11 - Mail subject: chrome - 2018.11.11_01:35:20
+2018-11-11 01:35:32 INFO  Log:11 - Mail is present: chrome - 2018.11.11_01:35:20
+2018-11-11 01:35:35 INFO  Log:11 - Test successfully finished: testEmailSending
+2018-11-11 01:35:35 INFO  Log:11 - Driver is closed
+2018-11-11 01:35:35 INFO  Log:11 - Stop logging
+2018-11-11 01:38:15 INFO  Log:11 - Start logging
+2018-11-11 01:38:18 INFO  Log:11 - Driver initialized
+2018-11-11 01:38:18 INFO  Log:11 - Start test: testEmailSending
+2018-11-11 01:38:19 INFO  Log:11 - Email send from testaccountfortestmail2@yandex.by to testaccountfortestmail1@yandex.by
+2018-11-11 01:38:19 INFO  Log:11 - Mail subject: chrome - 2018.11.11_01:38:18
+2018-11-11 01:38:28 INFO  Log:11 - Mail is present: chrome - 2018.11.11_01:38:18
+2018-11-11 01:38:30 INFO  Log:11 - Test successfully finished: testEmailSending
+2018-11-11 01:38:30 INFO  Log:11 - Driver is closed
+2018-11-11 01:38:30 INFO  Log:11 - Stop logging
+2018-11-11 01:52:09 INFO  Log:11 - Start logging
+2018-11-11 01:52:14 INFO  Log:11 - Driver initialized
+2018-11-11 01:52:14 INFO  Log:11 - Start test: testEmailSending
+2018-11-11 01:52:16 INFO  Log:11 - Email send from testaccountfortestmail2@yandex.by to testaccountfortestmail1@yandex.by
+2018-11-11 01:52:16 INFO  Log:11 - Mail subject: chrome - 2018.11.11_01:52:14
+2018-11-11 01:52:39 INFO  Log:11 - Screenshot captured
+2018-11-11 01:52:39 INFO  Log:11 - Driver is closed
+2018-11-11 01:52:39 INFO  Log:11 - Stop logging
+2018-11-11 01:56:06 INFO  Log:11 - Start logging
+2018-11-11 01:56:12 INFO  Log:11 - Driver initialized
+2018-11-11 01:56:12 INFO  Log:11 - Start test: testEmailSending
+2018-11-11 01:56:14 INFO  Log:11 - Email send from testaccountfortestmail2@yandex.by to testaccountfortestmail1@yandex.by
+2018-11-11 01:56:14 INFO  Log:11 - Mail subject: chrome - 2018.11.11_01:56:12
+2018-11-11 01:56:30 INFO  Log:11 - Mail is present: chrome - 2018.11.11_01:56:12
+2018-11-11 02:12:03 INFO  Log:11 - Start logging
+2018-11-11 02:12:07 INFO  Log:11 - Driver initialized
+2018-11-11 02:12:07 INFO  Log:11 - Start test: testEmailSending
+2018-11-11 02:12:09 INFO  Log:11 - Email send from testaccountfortestmail2@yandex.by to testaccountfortestmail1@yandex.by
+2018-11-11 02:12:09 INFO  Log:11 - Mail subject: chrome - 2018.11.11_02:12:07
+2018-11-11 02:12:17 INFO  Log:11 - Mail is present: chrome - 2018.11.11_02:12:07
+2018-11-11 02:12:19 INFO  Log:11 - Test successfully finished: testEmailSending
+2018-11-11 02:12:20 INFO  Log:11 - Driver is closed
+2018-11-11 02:12:20 INFO  Log:11 - Stop logging
+2018-11-11 02:41:42 INFO  Log:11 - Start logging
+2018-11-11 02:41:45 INFO  Log:11 - Driver initialized
+2018-11-11 02:41:45 INFO  Log:11 - Start test: testEmailSending
+2018-11-11 02:41:46 INFO  Log:11 - Email send from testaccountfortestmail2@yandex.by to testaccountfortestmail1@yandex.by
+2018-11-11 02:41:46 INFO  Log:11 - Mail subject: chrome - 2018.11.11_02:41:45
+2018-11-11 02:41:53 INFO  Log:11 - Driver is closed
+2018-11-11 02:41:53 INFO  Log:11 - Stop logging
+2018-11-11 02:45:08 INFO  Log:11 - Start logging
+2018-11-11 02:45:10 INFO  Log:11 - Driver initialized
+2018-11-11 02:45:11 INFO  Log:11 - Start test: testEmailSending
+2018-11-11 02:45:12 INFO  Log:11 - Email send from testaccountfortestmail2@yandex.by to testaccountfortestmail1@yandex.by
+2018-11-11 02:45:12 INFO  Log:11 - Mail subject: chrome - 2018.11.11_02:45:11
+2018-11-11 02:45:21 INFO  Log:11 - Mail is present: chrome - 2018.11.11_02:45:11
+2018-11-11 02:45:23 INFO  Log:11 - Test successfully finished: testEmailSending
+2018-11-11 02:45:24 INFO  Log:11 - Driver is closed
+2018-11-11 02:45:24 INFO  Log:11 - Stop logging
+2018-11-11 02:45:50 INFO  Log:11 - Start logging
+2018-11-11 02:45:52 INFO  Log:11 - Driver initialized
+2018-11-11 02:45:53 INFO  Log:11 - Start test: testEmailSending
+2018-11-11 02:45:54 INFO  Log:11 - Email send from testaccountfortestmail2@yandex.by to testaccountfortestmail1@yandex.by
+2018-11-11 02:45:54 INFO  Log:11 - Mail subject: chrome - 2018.11.11_02:45:53
+2018-11-11 02:46:02 INFO  Log:11 - Mail is present: chrome - 2018.11.11_02:45:53
+2018-11-11 02:57:22 INFO  Log:11 - Start logging
+2018-11-11 02:57:27 INFO  Log:11 - Driver initialized
+2018-11-11 02:57:27 INFO  Log:11 - Start test: testEmailSending
+2018-11-11 02:57:30 INFO  Log:11 - Email send from testaccountfortestmail2@yandex.by to testaccountfortestmail1@yandex.by
+2018-11-11 02:57:30 INFO  Log:11 - Mail subject: chrome - 2018.11.11_02:57:27
+2018-11-11 02:57:40 INFO  Log:11 - Mail is present: chrome - 2018.11.11_02:57:27
+2018-11-11 02:57:53 INFO  Log:11 - Screenshot captured
+2018-11-11 02:57:53 INFO  Log:11 - Screenshot captured
+2018-11-11 02:57:54 INFO  Log:11 - Driver is closed
+2018-11-11 02:57:54 INFO  Log:11 - Stop logging
+2018-11-11 02:59:24 INFO  Log:11 - Start logging
+2018-11-11 02:59:28 INFO  Log:11 - Driver initialized
+2018-11-11 02:59:28 INFO  Log:11 - Start test: testEmailSending
+2018-11-11 02:59:29 INFO  Log:11 - Email send from testaccountfortestmail2@yandex.by to testaccountfortestmail1@yandex.by
+2018-11-11 02:59:29 INFO  Log:11 - Mail subject: chrome - 2018.11.11_02:59:28
+2018-11-11 02:59:38 INFO  Log:11 - Mail is present: chrome - 2018.11.11_02:59:28
+2018-11-11 02:59:40 INFO  Log:11 - Test successfully finished: testEmailSending
+2018-11-11 02:59:41 INFO  Log:11 - Driver is closed
+2018-11-11 02:59:41 INFO  Log:11 - Stop logging

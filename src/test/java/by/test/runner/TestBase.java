@@ -5,18 +5,18 @@ import by.test.dataStorage.csv.AccountCsvImpl;
 import by.test.dataStorage.db.AccountDBImpl;
 import by.test.dataStorage.xml.AccountXmlImpl;
 import by.test.helpers.ScreenshotHelper;
+import by.test.listeners.TestListener;
 import by.test.logger.Log;
 import by.test.models.Account;
 import by.test.steps.Steps;
+import org.testng.ITestContext;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
+@Listeners(TestListener.class)
 public abstract class TestBase {
   Steps steps;
   Account user1;
@@ -53,7 +53,7 @@ public abstract class TestBase {
   }
 
   @BeforeClass(groups = "active")
-  public void beforeMethod() {
+  public void beforeMethod(ITestContext context) {
     Log.info("Start logging");
     steps = new Steps();
     steps.initDriver();
